@@ -32,7 +32,7 @@ async function downloadIcon(iconUrl) {
     return null;
   }
 
-  const fileDetails = await fileType.fromBuffer(iconData);
+  const fileDetails = await fileType.fileTypeFromBuffer(iconData);
   if (!fileDetails) {
     return null;
   }
